@@ -15,7 +15,7 @@ def body(fr, fw):
 	data = fr.readline()					# to remove title
 	data = fr.readline()					# to remove blank
 	regex_h2_1 = re.compile('^(ARGUMENT).')			# for tagname h2
-	regex_h2_2 = re.compile('^(I{0,3}V?I{0,2})\.')	# for tagname h2
+	regex_h2_2 = re.compile('^(I{0,3}V?I{0,2})\.')		# for tagname h2
 	regex_pp = re.compile('^[A-Z].+.$')			# for tagname p
 	# Handle Exception
 	regex_Tw = re.compile('Twas..ight')			# Exception 1 => there is no <br/>
